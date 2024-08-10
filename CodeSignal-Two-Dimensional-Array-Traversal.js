@@ -130,4 +130,5 @@ while(!fill && i <= lf-lfg) {
     	//console.log(i, d);
 }
 
-console.log(i-1, fill);
+//return fill ? i-1 : -1
+console.log((fill ? i-1 : -1), fill);
