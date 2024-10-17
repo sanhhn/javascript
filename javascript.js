@@ -48,3 +48,14 @@ while(s.includes('(')) {
   s = s.slice(0, start) + reverse + s.slice(end + 1);
 }
 console.log(s)
+
+/* //-------------------------------//
+max duplicate items in an array
+*/
+const arr = ['a', 'b', 'b', 'b', 'b','c']; // b
+const c = {};
+arr.forEach((x) => c[x] = (c[x] || 0)+1);
+
+let sorted = Object.entries(c).sort((prev, next) => prev[1] - next[1])
+console.log(sorted.pop()[0]);
+
